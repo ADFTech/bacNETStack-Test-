@@ -1,0 +1,94 @@
+{
+  "_from": "bacstack@0.0.1-beta.14",
+  "_id": "bacstack@0.0.1-beta.14",
+  "_inBundle": false,
+  "_integrity": "sha512-hmDL0MgGV8UNWffkMXIczlnqXC0g/9tfSXw0MjZ8Wd0dkgAYqNAPV4R6+n78zgUw52cezbzsTEFL3YK6kjspjQ==",
+  "_location": "/bacstack",
+  "_phantomChildren": {
+    "safer-buffer": "2.1.2"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bacstack@0.0.1-beta.14",
+    "name": "bacstack",
+    "escapedName": "bacstack",
+    "rawSpec": "0.0.1-beta.14",
+    "saveSpec": null,
+    "fetchSpec": "0.0.1-beta.14"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bacstack/-/bacstack-0.0.1-beta.14.tgz",
+  "_shasum": "332e08c6d1ca8af37c51932b207975272c2bae75",
+  "_spec": "bacstack@0.0.1-beta.14",
+  "_where": "C:\\Users\\ADFT010-RD\\Documents\\GitHub\\bacNETStack-Test-",
+  "author": {
+    "name": "Fabio Huser",
+    "email": "fabio@fh1.ch"
+  },
+  "bugs": {
+    "url": "https://github.com/fh1ch/node-bacstack/issues"
+  },
+  "bundleDependencies": false,
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {
+    "debug": "^4.3.1",
+    "iconv-lite": "^0.6.3"
+  },
+  "deprecated": false,
+  "description": "A BACnet protocol stack written in pure JavaScript.",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "docdash": "^1.2.0",
+    "eslint": "^7.29.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.0.6",
+    "jsdoc": "^3.6.7"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "homepage": "https://github.com/fh1ch/node-bacstack#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "text-summary",
+      "cobertura",
+      "lcov"
+    ],
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ]
+  },
+  "keywords": [
+    "bacnet",
+    "bacstack",
+    "building",
+    "automation"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "bacstack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fh1ch/node-bacstack.git"
+  },
+  "scripts": {
+    "changelog": "commitlint --from=origin/master",
+    "compliance": "jest --coverageDirectory reports/coverage-compliance test/compliance/*.spec.js",
+    "docs": "jsdoc -d ./docs -t node_modules/docdash ./lib ./index.js ./README.md",
+    "integration": "jest --coverageDirectory reports/coverage-integration test/integration/*.spec.js",
+    "lint": "eslint lib/ test/ index.js",
+    "test": "jest --coverageDirectory reports/coverage-test test/unit/*.spec.js"
+  },
+  "version": "0.0.1-beta.14"
+}
