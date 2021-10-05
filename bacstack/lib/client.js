@@ -269,6 +269,7 @@ class Client extends EventEmitter {
   _processUnconfirmedServiceRequest(address, type, service, buffer, offset, length) {
     let result;
     debug('Handle this._processUnconfirmedServiceRequest');
+    console.log("service",service);
     if (service === baEnum.UnconfirmedServiceChoice.I_AM) {
       result = baServices.iAmBroadcast.decode(buffer, offset);
       if (!result) return debug('Received invalid iAm message');
